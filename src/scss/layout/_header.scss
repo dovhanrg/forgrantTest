@@ -1,0 +1,104 @@
+@import '../function/extends';
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #2c3e4b;
+    background-color: #fcfcfc0a;
+    border-radius: 10px;
+    padding: 1rem 1.44rem;
+    // opacity: 0.02;
+    // height: 98px;
+      @include tablet-M {
+        max-height: 6rem;
+        flex-direction: row;
+        padding: 0 1.44rem;
+      }
+      @include desktop-S {
+        margin: 1rem 1.3rem;
+      }
+
+    &__text {
+        padding: 0.63rem 0 0.31rem;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 1.2;
+        color: #fff;
+        display: block;
+        // @include mobile-L {
+
+        // }
+        @include tablet-S {
+            margin: 0 auto;
+            line-height: 1.875;
+            
+        }
+        @include tablet-M {
+            padding: 2.63rem 0 2.31rem;
+            font-size: 2rem;
+        }
+    }
+    .select {
+        position: relative;
+
+        .items {
+            display: none;
+        }
+        .visible {
+            display: flex;
+            flex-direction: column;
+        }
+        .selectedWrapper {
+            border: 1px solid #92e8fe;
+            border-radius: 5px;
+            // min-width: 18.44rem;
+            // background-color: #1f272f;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-height: 3.82rem;
+            @include desktop-S {
+                min-width: 18.44rem;
+            }
+
+            .selectArrow {
+                color: #537f8d;
+                padding: 0.81rem;
+                transition: transform 400ms;
+            }
+            .transition {
+                transform: rotate(90deg);
+            }
+            
+            .item {
+                @extend %dropDownHeaderItem;
+            }
+        }
+        .items {
+            position: absolute;
+            top: 4.56rem;
+            border: 1px solid #92e8fe;
+            border-radius: 5px;
+            min-width: 4.74rem;
+            padding: 0.63rem;
+            cursor: pointer;
+            background-color: #1e252b;
+            z-index: 10;
+            @include desktop-S {
+                min-width: 17.14rem;
+            }
+
+            .item {
+                @extend %dropDownHeaderItem;
+                line-height: 1;
+                padding: 0.38rem;
+                &:hover {
+                    background-color: #92e8fe1c;
+                }
+            }
+        }
+    }
+}

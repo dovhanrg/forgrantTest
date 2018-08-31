@@ -1,0 +1,38 @@
+//   *,
+//   *::before,
+//   *::after {
+//     box-sizing: inherit;
+//     padding: 0;
+//     margin: 0;
+//   }
+//   body {
+//     min-height: 100vh;
+//     background-color: #ffffff;
+//     background-image: url('./images/bg.jpeg');
+//     background-size: cover;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//   }
+
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    // font-size: 62.5%;
+    font-size: 100%;
+  }
+
+  body {
+    background-color: #0f1e27;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    min-height: 100vh;
+
+    .wrapper {
+      max-width: 64rem;
+      margin: 0 auto;
+    }
+  }
+
+  

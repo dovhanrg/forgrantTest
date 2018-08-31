@@ -1,0 +1,180 @@
+
+  .coinSection {
+    // box-sizing: border-box;
+    // width: 100%;
+    min-width: 308px;
+    min-height: 354px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    margin: 0.94rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+
+    // background-image: url(images/oblique-flare@1x.png);
+    // linear-gradient(341deg, #00000000 67%, #fff 67%, #00000000 81%),
+    // radial-gradient(25rem at 50% 34%, white 0%, #577a58 61%, #426246 76%, #2d4934 100%)
+    &:nth-of-type(1) {
+      background-image: url(images/oblique-flare@1x.png),
+        radial-gradient(
+          25rem at 50% 34%,
+          white 0%,
+          #577a58 61%,
+          #426246 76%,
+          #2d4934 100%
+        );
+        .cardTitle {
+            background-image: url(images/ethereum@1x.png);
+            background-position: 200% 50%;
+        }
+    }
+    &:nth-of-type(2) {
+      background-image: url(images/oblique-flare@1x.png),
+        radial-gradient(
+          25rem at 50% 25%,
+          white 0%,
+          #696969 61%,
+          #4f4f4f 76%,
+          #333333 100%
+        );
+        .cardTitle {
+            background-image: url(images/litecoin@1x.png);
+        }
+    }
+    &:nth-of-type(3) {
+      background-image: url(images/oblique-flare@1x.png),
+        radial-gradient(
+          25rem at 50% 25%,
+          white 0%,
+          #7f5424 61%,
+          #5e3816 76%,
+          #301103 100%
+        );
+        .cardTitle {
+            background-image: url(images/bitcoin@1x.png);
+        }
+    }
+
+    .cardTitle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        min-height: 14rem;
+        background-repeat: no-repeat;
+        background-position: 50%;
+
+        // &:nth-of-type(1) {
+        //     background-image: url(images/ethereum@1x.png);
+        // }
+        // &:nth-of-type(2) {
+        //     background-image: url(images/litecoin@1x.png);
+        // }
+        // &:nth-of-type(3) {
+        //     background-image: url(images/bitcoin@1x.png);
+        // }
+
+        &__name {
+            font-size: 1.06rem;
+            font-family: "Roboto";
+            color: #ffffff;
+            font-weight: bold;
+            line-height: 2.682;
+            transform: matrix( 1.29929383155021,0,0,1.29929383155021,0,0);
+        }
+
+
+    }
+
+    .info {
+      padding: 0 1.75rem 1.31rem 2rem;
+
+      // &__price {
+        .price {
+          font-size: 1.25rem;
+          font-weight: bold;
+          line-height: 1.45;  
+          color: #ffffff;
+          display: flex;
+          justify-content: space-between;
+          
+          
+        }
+      // }
+      &__checkbox {
+        // transform: matrix( 2.2203959946496,0,0,2.2203959946496,0,0);
+        font-size: 0.875rem;
+        color: #ffffff;
+        font-weight: 700;
+        line-height: 2.5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .checkboxLabel {
+        // display: flex;
+        // justify-content: space-between;
+        // transform: matrix( 2.2203959946496,0,0,2.2203959946496,0,0);
+        font-size: 0.875rem;
+        color: #ffffff;
+        font-weight: 700;
+        // line-height: 7.203;
+        line-height: 2;
+        position: relative;
+        display: inline-block;
+        width: 2.56rem;
+        height: 0.94rem;
+
+        // .checkboxInput {
+        //   display: none;
+        // }
+        
+        // .checkboxInput:checked + .slider {
+        //       background-color: #2196F3;
+        //     }
+        // .checkboxInput:focus + .slider {
+        //   box-shadow: 0 0 1px #2196F3;
+        // }
+        // .checkboxInput:checked + .slider:before {
+        //   transform: translateX(26px);
+        //     }
+            
+        // .slider {
+        //   position: absolute;
+        //   cursor: pointer;
+        //   top: 0;
+        //   left: 0;
+        //   right: 0;
+        //   bottom: 0;
+        //   background-color: #ccc;
+        //   transition: .4s;
+        //   border-radius: 8px;
+
+        //   &:before {
+        //     position: absolute;
+        //     content: "";
+        //     height: 1.5rem;
+        //     width: 1.5rem;
+        //     left: -0.19rem;
+        //     bottom: -0.21rem;
+        //     background-color: white;
+        //     transition: .4s;
+        //     border-radius: 50%;
+        //   }
+        // }
+
+        }
+      }
+      .timeInterval {
+        display: flex;
+        justify-content: space-between;
+        // transform: matrix( 2.2203959946496,0,0,2.2203959946496,0,0);
+        color: #ffffff33;
+        font-weight: 700;
+        line-height: 1.3;
+      }
+    }
+  }
